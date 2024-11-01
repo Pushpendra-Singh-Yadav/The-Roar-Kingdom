@@ -22,13 +22,22 @@ function closeModal(event) {
     }
 }
 
-// Close Popup when clicking outside or on close button
-window.onclick = function(event) {
-    const popup = document.getElementById("contactPopup");
-    if (event.target == popup || event.target.classList.contains("close-popup")) {
-        popup.style.display = "none";
+    // Open Popup
+    function openPopup() {
+        document.getElementById("contactPopup").style.display = "flex";
     }
-}
+
+    // Close Popup
+    function closePopup() {
+        document.getElementById("contactPopup").style.display = "none";
+    }
+
+    // Close the popup if the user clicks outside the popup content
+    document.getElementById("contactPopup").addEventListener("click", function(event) {
+        if (event.target.classList.contains("popup-overlay")) {
+            closePopup();
+        }
+    });
 
 // Optional: Add hover effect for social icons
 document.querySelectorAll('.social-icon').forEach(icon => {
