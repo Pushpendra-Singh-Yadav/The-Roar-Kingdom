@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Roar Kingdom - Explore the Wild</title>
+    <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMJ6Z4c/7c0xKmYf6p6Dz6qMZHYp8tZJp1nWnG" crossorigin="anonymous">
+
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<header>
+    <nav class="navbar">
+        <div class="nav-links left-links">
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#tours">Tours</a></li>
+            </ul>
+        </div>
+        
+        <!-- Centered Logo -->
+        <div class="logo-container">
+            <a href="#home">
+                <img src="logo.jpg" alt="The Roar Kingdom Logo" class="logo-img">
+            </a>
+        </div>
+
+        <div class="nav-links right-links">
+            <ul>
+                <li><a href="#stays">Stays</a></li>
+                <li><a href="#guides">Guides</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </div>
+        
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <h1>Welcome to The Roar Kingdom</h1>
+        <p>Experience the wilderness like never before.</p>
+        <a href="#tours" class="cta-button">Plan Your Adventure</a>
+    </section>
+
+<!-- About Us Section -->
+<section id="about" class="about">
+    <div class="about-container">
+        <h2 class="section-title">About Us</h2>
+        <p class="about-intro">Welcome to <strong>The Roar Kingdom</strong>, your gateway to eco-conscious wildlife experiences across India’s most breathtaking national parks and sanctuaries.</p>
+        
+        <p class="about-text">Our mission is to connect travelers with the wonders of the wild, offering immersive tours that nurture a passion for conservation. Journey with us through diverse landscapes – from the regal tigers of Ranthambore to the rich birdlife of Kaziranga – each experience crafted to respect and preserve nature.</p>
+        
+        <p class="about-text">Join us in exploring, learning, and protecting India’s natural heritage with the guidance of our dedicated experts who share a love for the outdoors and a commitment to sustainability.</p>
+        
+        <div class="about-images">
+            <img src="Wildlife Experience.jpg" alt="Wildlife Guide" class="about-img fade-in">
+            <img src="tour1.jpg" alt="Safari Tour" class="about-img fade-in">
+        </div>
+    </div>
+</section>
+
+<!-- Tours Section -->
+<section id="tours" class="tours">
+    <div class="tours-container">
+        <h2 class="section-title">Our Tours</h2>
+        <p class="section-description">Discover our exclusive, eco-conscious tours designed to bring you closer to India's awe-inspiring wildlife in the most sustainable way. Each tour is crafted with comfort, safety, and conservation in mind.</p>
+
+        <div class="tour-details">
+            <!-- Tour Card 1 -->
+            <div class="tour-card tour-animation">
+                <div class="tour-icon">&#128693;</div> <!-- Custom Tour Icon -->
+                <h3>Jungle Safari in Ranthambore</h3>
+                <p>Embark on an adventure through Ranthambore National Park to spot the majestic Bengal tiger and other wildlife in their natural habitat.</p>
+                <div class="tour-info">
+                    <span class="tour-item"><i class="fas fa-clock"></i> Duration: 6 hours</span>
+                    <span class="tour-item"><i class="fas fa-rupee-sign"></i> Starting from ₹3,500</span>
+                    <span class="tour-item"><i class="fas fa-calendar-alt"></i> Available: Year-round</span>
+                </div>
+                <p class="tour-highlight">Enjoy guided tours, eco-friendly transport, and top-notch safety measures!</p>
+                <p class="contact-booking" onclick="openPopup()">Contact for booking your tour</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/theroarkingdom" class="social-icon">Instagram</a> |
+                    <a href="mailto:bookings@theroarkingdom.com" class="social-icon">Email</a> |
+                    <a href="tel:+911234567890" class="social-icon">Call Us</a>
+                </div>
+            </div>
+
+            <!-- Tour Card 2 -->
+            <div class="tour-card tour-animation">
+                <div class="tour-icon">&#128064;</div> <!-- Custom Bird Watching Icon -->
+                <h3>Bird Watching in Kaziranga</h3>
+                <p>Experience the diverse avian life of Kaziranga National Park with our expert-guided birdwatching tours, perfect for nature enthusiasts.</p>
+                <div class="tour-info">
+                    <span class="tour-item"><i class="fas fa-clock"></i> Duration: 4 hours</span>
+                    <span class="tour-item"><i class="fas fa-rupee-sign"></i> Starting from ₹2,500</span>
+                    <span class="tour-item"><i class="fas fa-calendar-alt"></i> Available: October - March</span>
+                </div>
+                <p class="tour-highlight">Spot rare species, capture stunning photos, and learn from knowledgeable guides.</p>
+                <p class="contact-booking" onclick="openPopup()">Contact for booking your tour</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/theroarkingdom" class="social-icon">Instagram</a> |
+                    <a href="mailto:bookings@theroarkingdom.com" class="social-icon">Email</a> |
+                    <a href="tel:+911234567890" class="social-icon">Call Us</a>
+                </div>
+            </div>
+        </div>
+        <!-- Pop-Up Modal for Contact Details -->
+<div id="contactPopup" class="popup-overlay">
+    <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <h2>Contact Us to Book Your Tour</h2>
+        <p>We're excited to help you plan your adventure with The Roar Kingdom!</p>
+        <ul class="contact-details">
+            <li><strong>Email:</strong> <a href="mailto:bookings@theroarkingdom.com">bookings@theroarkingdom.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+91-07947434830">+91-07947434830</a></li>
+            <li><strong>Instagram:</strong> <a href="https://www.instagram.com/theroarkingdom" target="_blank">@theroarkingdom</a></li>
+        </ul>
+    </div>
+</div>
+    </div>
+</section>
+
+<!-- Stays Section -->
+<section id="stays" class="stays">
+    <div class="stays-container">
+        <h2 class="section-title">Stay With Us</h2>
+        <p class="stay-intro">Immerse yourself in nature with our eco-friendly lodges and campsites, offering comfort and sustainable living at park entrances.</p>
+        
+        <div class="stay-gallery">
+            <div class="stay-card zoom-in">
+                <img src="Forest-Lodge.jpg" alt="Lodge" class="stay-img">
+                <h3>Forest Lodge</h3>
+                <p>A luxurious lodge surrounded by lush greenery, featuring modern amenities and tranquil views of the jungle.</p>
+            </div>
+
+            <div class="stay-card zoom-in">
+                <img src="tent-image.jpg" alt="Tent Stay" class="stay-img">
+                <h3>Safari Tent</h3>
+                <p>Enjoy glamping in our spacious safari tents, complete with cozy beds and panoramic nature views.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <!-- Enhanced Guides Section -->
+<section id="guides" class="guides">
+    <h2>Meet Our Expert Guides</h2>
+    <p>Our experienced guides are passionate about wildlife and knowledgeable about the terrain. Each guide specializes in different aspects of the ecosystem, making every tour unique and informative. Get to know our team:</p>
+    <div class="guide-gallery">
+        <div class="guide-card">
+            <img src="pic 1.jpeg" alt="Guide 1">
+            <div class="guide-info">
+                <h3>John Doe</h3>
+                <p>Specialist in bird watching and animal tracking. With over 10 years of experience, John brings a wealth of knowledge to every tour.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/guide_johndoe" class="social-icon">Instagram</a>
+                    <a href="mailto:john@theroarkingdom.com" class="social-icon">Email</a>
+                </div>
+            </div>
+        </div>
+        <div class="guide-card">
+            <img src="pic 2.jpeg" alt="Guide 2">
+            <div class="guide-info">
+                <h3>Jane Smith</h3>
+                <p>Expert in ecology and conservation efforts. Jane is dedicated to preserving the natural beauty of our national parks.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/guide_janesmith" class="social-icon">Instagram</a>
+                    <a href="mailto:jane@theroarkingdom.com" class="social-icon">Email</a>
+                </div>
+            </div>
+        </div>
+        <!-- Additional Guide Profiles -->
+    </div>
+</section>
+
+<section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <p>Explore moments captured from our expeditions. Each photo tells a story of the vibrant wildlife and scenic landscapes waiting to be discovered.</p>
+
+    <div class="gallery-grid">
+        <div class="gallery-item" onclick="openModal('Tiger.jpg', 'A majestic tiger in its natural habitat.', 'Majestic Tiger')">
+            <img src="Tiger.jpg" alt="Gallery Image 1">
+            <p class="image-description">Majestic Tiger</p>
+        </div>
+        <div class="gallery-item" onclick="openModal('ranthambore Sunset.jpg', 'Sunset over the beautiful Ranthambore National Park.', 'Ranthambore Sunset')">
+            <img src="ranthambore Sunset.jpg" alt="Gallery Image 2">
+            <p class="image-description">Ranthambore Sunset</p>
+        </div>
+        <div class="gallery-item" onclick="openModal('kaziranga.jpg', 'Exploring the lush greenery of Kaziranga National Park.', 'Kaziranga Wilderness')">
+            <img src="kaziranga.jpg" alt="Gallery Image 3">
+            <p class="image-description">Kaziranga Wilderness</p>
+        </div>
+        <div class="gallery-item" onclick="openModal('elephant.jpg', 'A playful elephant enjoying a bath.', 'Playful Elephant')">
+            <img src="elephant.jpg" alt="Gallery Image 4">
+            <p class="image-description">Playful Elephant</p>
+        </div>
+    </div>
+
+    <!-- Modal for Large Image View -->
+    <div id="imageModal" class="modal" onclick="closeModal(event)">
+        <div class="modal-content-container">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-image" id="modalImage">
+            <div class="modal-description">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-brand">
+            <h2>The Roar Kingdom</h2>
+            <p>&copy; 2024 The Roar Kingdom. All Rights Reserved.</p>
+        </div>
+
+        <div class="logo-container">
+            <a href="#home">
+                <img src="logo.jpg" alt="The Roar Kingdom Logo" class="logo-img">
+            </a>
+        </div>
+
+        <div class="footer-location">
+            <h3>Our Location</h3>
+            <p>Building No. I 53,</p>
+            <p>Aditya Puram, Gwalior - 474005</p>
+            <p>Madhya Pradesh, India</p>
+            <p>Email: <a href="mailto:info@theroarkingdom.com">info@theroarkingdom.com</a></p>
+            <p>Phone: <a href="tel:+91-07947434830">+91-07947434830</a></p>
+        </div>
+    </div>
+</footer>
+    <!-- External JavaScript File -->
+    <script src="scripts.js"></script>
+</body>
+</html>
