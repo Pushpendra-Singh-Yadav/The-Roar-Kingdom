@@ -22,22 +22,14 @@ function closeModal(event) {
     }
 }
 
-    // Open Popup
-    function openPopup() {
-        document.getElementById("contactPopup").style.display = "flex";
-    }
+function openPopup() {
+    document.getElementById('contactPopup').style.display = 'flex';
+}
 
-    // Close Popup
-    function closePopup() {
-        document.getElementById("contactPopup").style.display = "none";
-    }
+function closePopup() {
+    document.getElementById('contactPopup').style.display = 'none';
+}
 
-    // Close the popup if the user clicks outside the popup content
-    document.getElementById("contactPopup").addEventListener("click", function(event) {
-        if (event.target.classList.contains("popup-overlay")) {
-            closePopup();
-        }
-    });
 
 // Optional: Add hover effect for social icons
 document.querySelectorAll('.social-icon').forEach(icon => {
@@ -47,4 +39,12 @@ document.querySelectorAll('.social-icon').forEach(icon => {
     icon.addEventListener('mouseout', () => {
         icon.style.transform = 'scale(1)';
     });
+});
+
+// Toggle Navbar for Mobile Devices
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
 });
