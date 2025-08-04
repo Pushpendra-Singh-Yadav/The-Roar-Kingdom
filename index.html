@@ -3,253 +3,928 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Roar Kingdom - Explore the Wild</title>
+    <title>The Roar Kingdom | Premium Wildlife Tours in India</title>
+    <meta name="description" content="Experience India's wild beauty with The Roar Kingdom's premium wildlife tours, luxury stays, and expert-guided safaris.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMJ6Z4c/7c0xKmYf6p6Dz6qMZHYp8tZJp1nWnG" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <header>
-        <nav class="navbar">
-            <div class="logo-container">
-                <a href="#home">
-                    <img src="logo.jpg" alt="The Roar Kingdom Logo" class="logo">
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo">
+                <img src="assets/logo.svg" alt="The Roar Kingdom Logo">
+            </div>
+            <div class="preloader-progress">
+                <div class="preloader-progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-logo">
+                <a href="#home" aria-label="The Roar Kingdom Home">
+                    <img src="assets/logo.svg" alt="The Roar Kingdom Logo" class="logo-img">
+                    <span class="logo-text">The Roar Kingdom</span>
                 </a>
             </div>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#tours">Tours</a></li>
-                    <li><a href="#stays">Stays</a></li>
-                    <li><a href="#guides">Guides</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
+
+            <nav class="header-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#tours" class="nav-link">Tours</a></li>
+                    <li class="nav-item"><a href="#stays" class="nav-link">Stays</a></li>
+                    <li class="nav-item"><a href="#guides" class="nav-link">Guides</a></li>
+                    <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
+            </nav>
+
+            <div class="header-cta">
+                <button class="btn btn-outline" id="book-now-btn">Book Now</button>
+                <button class="header-hamburger" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-            <div class="menu-toggle" id="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-        </nav>
+        </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero">
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="assets/jungle-bg.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+
         <div class="hero-content">
-            <h1>Welcome to The Roar Kingdom</h1>
-            <p>Step into the untamed beauty of the wild.</p>
-            <a href="#tours" class="cta-button">Start Your Journey</a>
+            <div class="hero-text">
+                <h1 class="hero-title">Discover India's Wild Majesty</h1>
+                <p class="hero-subtitle">Premium wildlife experiences curated by experts</p>
+                <div class="hero-cta">
+                    <a href="#tours" class="btn btn-primary">Explore Tours</a>
+                    <a href="#about" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+
+            <div class="hero-scroll">
+                <span>Scroll Down</span>
+                <div class="scroll-icon"></div>
+            </div>
         </div>
     </section>
 
-    <!-- About Us Section -->
-    <section id="about" class="about">
+    <!-- About Section -->
+    <section class="about section-padding" id="about">
+        <div class="section-header">
+            <span class="section-subtitle">Our Story</span>
+            <h2 class="section-title">The Roar Kingdom</h2>
+            <div class="section-divider"></div>
+        </div>
+
         <div class="about-container">
-            <h2>About Us</h2>
             <div class="about-content">
-                <p>
-                    <strong>The Roar Kingdom</strong> is your ultimate gateway to the mesmerizing world of wildlife. We are dedicated to providing immersive eco-tourism experiences in India’s most breathtaking national parks and wildlife sanctuaries.
-                </p>
-                <p>
-                    Our tailored tours and stays ensure you connect with the wonders of the wild, while promoting conservation and sustainability.
-                </p>
+                <p class="about-text">Founded in 2010, The Roar Kingdom has been at the forefront of sustainable wildlife tourism in India. Our mission is to connect people with nature while supporting conservation efforts and local communities.</p>
+                
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="12">0</span>
+                        <span class="stat-label">National Parks</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="150">0</span>
+                        <span class="stat-label">Wildlife Species</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="5000">0</span>
+                        <span class="stat-label">Happy Guests</span>
+                    </div>
+                </div>
+
+                <div class="about-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Sustainable Tourism</h3>
+                        <p>We prioritize eco-friendly practices to minimize our environmental impact.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Safety First</h3>
+                        <p>All our tours follow strict safety protocols with trained professionals.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>Luxury Experience</h3>
+                        <p>Premium accommodations and personalized service for your comfort.</p>
+                    </div>
+                </div>
             </div>
+
             <div class="about-images">
-                <img src="tour1.jpg" alt="Wildlife" class="about-img">
-                <img src="vision.jpeg" alt="Safari Adventure" class="about-img">
+                <div class="image-stack">
+                    <div class="stack-item stack-item-large">
+                        <img src="assets/about-1.jpg" alt="Tiger in Ranthambore">
+                    </div>
+                    <div class="stack-item stack-item-small">
+                        <img src="assets/about-2.jpg" alt="Elephant in Kaziranga">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-<!-- Tours Section -->
-<section id="tours" class="tours">
-    <div class="tours-container">
-        <h2 class="section-title">Our Tours</h2>
-        <p class="section-description">
-            Dive into the wilderness with our meticulously crafted tours, combining thrilling adventures, sustainable travel, and unmatched hospitality. Each journey is designed to immerse you in India's natural beauty while prioritizing conservation and safety.
-        </p>
+    <!-- Tours Section -->
+    <section class="tours section-padding" id="tours">
+        <div class="section-header">
+            <span class="section-subtitle">Wildlife Adventures</span>
+            <h2 class="section-title">Signature Tours</h2>
+            <div class="section-divider"></div>
+            <p class="section-description">Our carefully crafted tours offer unforgettable encounters with India's majestic wildlife in their natural habitats.</p>
+        </div>
 
-        <div class="tour-details">
-            <!-- Tour Card 1 -->
-            <div class="tour-card tour-animation">
-                <div class="tour-image" style="background-image: url('ranthambore.jpg');"></div>
-                <div class="tour-content">
-                    <h3>Ranthambore Jungle Safari</h3>
-                    <p>Embark on a guided safari in Ranthambore National Park to witness Bengal tigers, leopards, and a vibrant array of wildlife.</p>
-                    <ul class="tour-info">
-                        <li><i class="fas fa-clock"></i> <strong>Duration:</strong> 6 hours</li>
-                        <li><i class="fas fa-rupee-sign"></i> <strong>Starting from:</strong> ₹3,500</li>
-                        <li><i class="fas fa-calendar-alt"></i> <strong>Available:</strong> Year-round</li>
-                    </ul>
-                    <p class="tour-highlight">Features include eco-friendly transport, expert guides, and unparalleled safety measures.</p>
-                    <button class="btn-primary" onclick="openPopup()">Book Your Tour</button>
+        <div class="tours-container">
+            <div class="tour-cards">
+                <!-- Tour Card 1 -->
+                <div class="tour-card">
+                    <div class="tour-card-header">
+                        <img src="assets/tour-1.jpg" alt="Ranthambore Tiger Safari">
+                        <div class="tour-badge">Best Seller</div>
+                    </div>
+                    <div class="tour-card-body">
+                        <h3>Ranthambore Tiger Safari</h3>
+                        <p class="tour-description">Experience the thrill of spotting the majestic Bengal tiger in one of India's most famous national parks.</p>
+                        
+                        <div class="tour-details">
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>3 Days / 2 Nights</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Ranthambore, Rajasthan</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>Small Group (Max 6)</span>
+                            </div>
+                        </div>
+
+                        <div class="tour-price">
+                            <span class="price-from">From</span>
+                            <span class="price-amount">₹25,000</span>
+                            <span class="price-person">per person</span>
+                        </div>
+
+                        <div class="tour-cta">
+                            <button class="btn btn-primary tour-book-btn" data-tour="ranthambore-tiger-safari">Book Now</button>
+                            <button class="btn btn-text tour-more-btn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour Card 2 -->
+                <div class="tour-card">
+                    <div class="tour-card-header">
+                        <img src="assets/tour-2.jpg" alt="Kaziranga Wildlife Expedition">
+                        <div class="tour-badge">New</div>
+                    </div>
+                    <div class="tour-card-body">
+                        <h3>Kaziranga Wildlife Expedition</h3>
+                        <p class="tour-description">Discover the one-horned rhinoceros and diverse birdlife in this UNESCO World Heritage Site.</p>
+                        
+                        <div class="tour-details">
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>4 Days / 3 Nights</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Kaziranga, Assam</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>Private Tour</span>
+                            </div>
+                        </div>
+
+                        <div class="tour-price">
+                            <span class="price-from">From</span>
+                            <span class="price-amount">₹35,000</span>
+                            <span class="price-person">per person</span>
+                        </div>
+
+                        <div class="tour-cta">
+                            <button class="btn btn-primary tour-book-btn" data-tour="kaziranga-wildlife-expedition">Book Now</button>
+                            <button class="btn btn-text tour-more-btn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour Card 3 -->
+                <div class="tour-card">
+                    <div class="tour-card-header">
+                        <img src="assets/tour-3.jpg" alt="Bandhavgarh Jungle Retreat">
+                        <div class="tour-badge">Luxury</div>
+                    </div>
+                    <div class="tour-card-body">
+                        <h3>Bandhavgarh Jungle Retreat</h3>
+                        <p class="tour-description">A luxury wildlife experience combining premium safaris with 5-star accommodation in the heart of the jungle.</p>
+                        
+                        <div class="tour-details">
+                            <div class="detail-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>5 Days / 4 Nights</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Bandhavgarh, MP</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>Couples & Small Groups</span>
+                            </div>
+                        </div>
+
+                        <div class="tour-price">
+                            <span class="price-from">From</span>
+                            <span class="price-amount">₹65,000</span>
+                            <span class="price-person">per person</span>
+                        </div>
+
+                        <div class="tour-cta">
+                            <button class="btn btn-primary tour-book-btn" data-tour="bandhavgarh-jungle-retreat">Book Now</button>
+                            <button class="btn btn-text tour-more-btn">Learn More</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Tour Card 2 -->
-            <div class="tour-card tour-animation">
-                <div class="tour-image" style="background-image: url('kaziranga.jpg');"></div>
-                <div class="tour-content">
-                    <h3>Kaziranga Bird Watching</h3>
-                    <p>Explore the avian wonders of Kaziranga National Park with an expert guide to spot exotic bird species and learn about their habitats.</p>
-                    <ul class="tour-info">
-                        <li><i class="fas fa-clock"></i> <strong>Duration:</strong> 4 hours</li>
-                        <li><i class="fas fa-rupee-sign"></i> <strong>Starting from:</strong> ₹2,500</li>
-                        <li><i class="fas fa-calendar-alt"></i> <strong>Available:</strong> October - March</li>
-                    </ul>
-                    <p class="tour-highlight">Enjoy tailored routes, expert-guided tours, and breathtaking photographic opportunities.</p>
-                    <button class="btn-primary" onclick="openPopup()">Book Your Tour</button>
+            <div class="tours-cta">
+                <a href="#contact" class="btn btn-outline">Customize Your Tour</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stays Section -->
+    <section class="stays section-padding" id="stays">
+        <div class="section-header">
+            <span class="section-subtitle">Wilderness Retreats</span>
+            <h2 class="section-title">Luxury Stays</h2>
+            <div class="section-divider"></div>
+            <p class="section-description">Immerse yourself in nature without compromising on comfort at our premium wildlife lodges and camps.</p>
+        </div>
+
+        <div class="stays-container">
+            <div class="stay-tabs">
+                <button class="stay-tab active" data-category="all">All Stays</button>
+                <button class="stay-tab" data-category="jungle-lodge">Jungle Lodges</button>
+                <button class="stay-tab" data-category="luxury-tent">Luxury Tents</button>
+                <button class="stay-tab" data-category="boutique">Boutique Hotels</button>
+            </div>
+
+            <div class="stay-cards">
+                <!-- Stay 1 -->
+                <div class="stay-card" data-category="jungle-lodge">
+                    <div class="stay-card-image">
+                        <img src="assets/stay-1.jpg" alt="Tiger Haven Lodge">
+                        <div class="stay-card-overlay">
+                            <div class="stay-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stay-card-body">
+                        <h3>Tiger Haven Lodge</h3>
+                        <p class="stay-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Ranthambore, Rajasthan
+                        </p>
+                        <p class="stay-description">A luxurious lodge with private balconies overlooking watering holes frequented by wildlife.</p>
+                        
+                        <div class="stay-amenities">
+                            <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                            <span><i class="fas fa-swimming-pool"></i> Pool</span>
+                            <span><i class="fas fa-utensils"></i> Restaurant</span>
+                        </div>
+
+                        <div class="stay-price">
+                            <span class="price-from">From</span>
+                            <span class="price-amount">₹12,000</span>
+                            <span class="price-night">/ night</span>
+                        </div>
+
+                        <button class="btn btn-outline stay-book-btn">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Stay 2 -->
+                <div class="stay-card" data-category="luxury-tent">
+                    <div class="stay-card-image">
+                        <img src="assets/stay-2.jpg" alt="Rhino Retreat Camp">
+                        <div class="stay-card-overlay">
+                            <div class="stay-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stay-card-body">
+                        <h3>Rhino Retreat Camp</h3>
+                        <p class="stay-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Kaziranga, Assam
+                        </p>
+                        <p class="stay-description">Luxury tents with en-suite bathrooms and private decks offering stunning jungle views.</p>
+                        
+                        <div class="stay-amenities">
+                            <span><i class="fas fa-fire"></i> Bonfire</span>
+                            <span><i class="fas fa-binoculars"></i> Watchtower</span>
+                            <span><i class="fas fa-spa"></i> Spa</span>
+                        </div>
+
+                        <div class="stay-price">
+                            <span class="price-from">From</span>
+                            <span class="price-amount">₹9,500</span>
+                            <span class="price-night">/ night</span>
+                        </div>
+
+                        <button class="btn btn-outline stay-book-btn">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Stay 3 -->
+                <div class="stay-card" data-category="boutique">
+                    <div class="stay-card-image">
+                        <img src="assets/stay-3.jpg" alt="Leopard's Den Boutique">
+                        <div class="stay-card-overlay">
+                            <div class="stay-rating">
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stay-card-body">
+                        <h3>Leopard's Den Boutique</h3>
+                        <p class="stay-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Bandhavgarh, MP
+                        </p>
+                        <p class="stay-description">An intimate boutique hotel with just 8 rooms, offering personalized service and jungle views.</p>
+                        
+                        <div class="stay-amenities">
+                            <span><i class="fas fa-wine-glass-alt"></i> Bar</span>
+                            <span><i class="fas fa-concierge-bell"></i> Butler</span>
+                            <span><i class="fas fa-car"></i> Safari Jeep</span>
+                        </div>
+
+                        <div class="stay-price">
+                            <span class="price-from">From</span>
+                            <span class="price-amount">₹18,000</span>
+                            <span class="price-night">/ night</span>
+                        </div>
+
+                        <button class="btn btn-outline stay-book-btn">Book Now</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Pop-Up Modal for Contact Details -->
-    <div id="contactPopup" class="popup-overlay">
-        <div class="popup-content">
-            <span class="close-popup" onclick="closePopup()">&times;</span>
-            <h2>Contact Us to Book Your Tour</h2>
-            <p>We’re excited to help you plan your perfect adventure with The Roar Kingdom!</p>
-            <ul class="contact-details">
-                <li><strong>Email:</strong> <a href="mailto:bookings@theroarkingdom.com">bookings@theroarkingdom.com</a></li>
-                <li><strong>Phone:</strong> <a href="tel:+911234567890">+91-12345-67890</a></li>
-                <li><strong>Instagram:</strong> <a href="https://www.instagram.com/theroarkingdom" target="_blank">@theroarkingdom</a></li>
-            </ul>
+    <!-- Guides Section -->
+    <section class="guides section-padding" id="guides">
+        <div class="section-header">
+            <span class="section-subtitle">Meet Our Experts</span>
+            <h2 class="section-title">Wildlife Guides</h2>
+            <div class="section-divider"></div>
+            <p class="section-description">Our team of expert naturalists and wildlife photographers will enhance your experience with their deep knowledge and passion.</p>
         </div>
-    </div>
-</section>
 
-<!-- Stays Section -->
-<section id="stays" class="stays">
-    <div class="stays-container">
-        <h2 class="section-title">Stay With Us</h2>
-        <p class="section-description">
-            Escape into nature with our eco-friendly lodges and campsites, offering a perfect balance of comfort and sustainability. Nestled amidst serene surroundings, our accommodations ensure you wake up to the sounds of the wild.
-        </p>
+        <div class="guides-container">
+            <div class="guide-slider">
+                <!-- Guide 1 -->
+                <div class="guide-card">
+                    <div class="guide-image">
+                        <img src="assets/guide-1.jpg" alt="Rajiv Malhotra">
+                        <div class="guide-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="guide-info">
+                        <h3>Rajiv Malhotra</h3>
+                        <p class="guide-specialty">Tiger Tracking Specialist</p>
+                        <p class="guide-bio">With 15 years in Ranthambore, Rajiv can predict tiger movements like no other. His tracking skills are legendary.</p>
+                        <div class="guide-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">Tiger Sightings</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">12</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="stay-gallery">
-            <!-- Stay Card 1 -->
-            <div class="stay-card">
-                <div class="stay-image" style="background-image: url('forest-lodge.jpg');"></div>
-                <div class="stay-content">
-                    <h3>Forest Lodge</h3>
-                    <p>A luxurious retreat surrounded by verdant greenery, featuring modern amenities and breathtaking jungle views.</p>
-                    <ul class="stay-info">
-                        <li><i class="fas fa-bed"></i> <strong>Type:</strong> Deluxe Lodge</li>
-                        <li><i class="fas fa-wifi"></i> <strong>Free Wi-Fi:</strong> Yes</li>
-                        <li><i class="fas fa-rupee-sign"></i> <strong>Price:</strong> ₹6,000/night</li>
-                    </ul>
+                <!-- Guide 2 -->
+                <div class="guide-card">
+                    <div class="guide-image">
+                        <img src="assets/guide-2.jpg" alt="Priya Sharma">
+                        <div class="guide-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="guide-info">
+                        <h3>Priya Sharma</h3>
+                        <p class="guide-specialty">Birding & Conservation</p>
+                        <p class="guide-bio">A PhD in Ornithology, Priya has documented over 300 bird species in Kaziranga and leads our conservation initiatives.</p>
+                        <div class="guide-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">300+</span>
+                                <span class="stat-label">Bird Species</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">8</span>
+                                <span class="stat-label">Research Papers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guide 3 -->
+                <div class="guide-card">
+                    <div class="guide-image">
+                        <img src="assets/guide-3.jpg" alt="Arjun Patel">
+                        <div class="guide-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="guide-info">
+                        <h3>Arjun Patel</h3>
+                        <p class="guide-specialty">Wildlife Photography</p>
+                        <p class="guide-bio">National Geographic featured photographer who teaches guests how to capture stunning wildlife moments.</p>
+                        <div class="guide-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Exhibitions</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">20</span>
+                                <span class="stat-label">Awards</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section-padding" id="gallery">
+        <div class="section-header">
+            <span class="section-subtitle">Wildlife Moments</span>
+            <h2 class="section-title">Photo Gallery</h2>
+            <div class="section-divider"></div>
+            <p class="section-description">Captured by our team and guests, these images showcase the breathtaking beauty of India's wildlife.</p>
+        </div>
+
+        <div class="gallery-container">
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item">
+                    <img src="assets/gallery-1.jpg" alt="Bengal Tiger" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Royal Bengal Tiger</h3>
+                            <p>Ranthambore National Park</p>
+                            <button class="gallery-view-btn">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item">
+                    <img src="assets/gallery-2.jpg" alt="Indian Rhinoceros" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>One-Horned Rhino</h3>
+                            <p>Kaziranga National Park</p>
+                            <button class="gallery-view-btn">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item">
+                    <img src="assets/gallery-3.jpg" alt="Asiatic Elephant" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Asiatic Elephant</h3>
+                            <p>Bandhavgarh National Park</p>
+                            <button class="gallery-view-btn">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item">
+                    <img src="assets/gallery-4.jpg" alt="Indian Leopard" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Indian Leopard</h3>
+                            <p>Jawai Conservation Reserve</p>
+                            <button class="gallery-view-btn">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item">
+                    <img src="assets/gallery-5.jpg" alt="Sambar Deer" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Sambar Deer</h3>
+                            <p>Kanha National Park</p>
+                            <button class="gallery-view-btn">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item">
+                    <img src="assets/gallery-6.jpg" alt="Peacock" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Indian Peafowl</h3>
+                            <p>Ranthambore National Park</p>
+                            <button class="gallery-view-btn">
+                                <i class="fas fa-expand"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Stay Card 2 -->
-            <div class="stay-card">
-                <div class="stay-image" style="background-image: url('tent-stay.jpg');"></div>
-                <div class="stay-content">
-                    <h3>Safari Tent</h3>
-                    <p>Enjoy the thrill of camping in our luxury safari tents, equipped with cozy beds, power outlets, and panoramic views.</p>
-                    <ul class="stay-info">
-                        <li><i class="fas fa-bed"></i> <strong>Type:</strong> Luxury Tent</li>
-                        <li><i class="fas fa-fire"></i> <strong>Bonfire:</strong> Available</li>
-                        <li><i class="fas fa-rupee-sign"></i> <strong>Price:</strong> ₹4,000/night</li>
-                    </ul>
+            <div class="gallery-cta">
+                <a href="#" class="btn btn-outline">View More Photos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section-padding">
+        <div class="section-header">
+            <span class="section-subtitle">Guest Experiences</span>
+            <h2 class="section-title">Testimonials</h2>
+            <div class="section-divider"></div>
+        </div>
+
+        <div class="testimonials-container">
+            <div class="testimonial-slider">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The Roar Kingdom delivered beyond our expectations. Our guide's knowledge of tiger behavior led us to 5 tiger sightings in 3 days! The luxury tent was impeccable with all modern amenities amidst the jungle."</p>
+                    <div class="testimonial-author">
+                        <img src="assets/testimonial-1.jpg" alt="Aditya Kapoor" class="author-image">
+                        <div class="author-info">
+                            <h4>Aditya Kapoor</h4>
+                            <p>Mumbai, India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"As a wildlife photographer, I've been on many tours, but The Roar Kingdom stands out. Their photography-focused safaris with expert guides helped me capture my best shots yet. The attention to detail was remarkable."</p>
+                    <div class="testimonial-author">
+                        <img src="assets/testimonial-2.jpg" alt="Sarah Johnson" class="author-image">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>London, UK</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Our family vacation with The Roar Kingdom was perfect. They customized the itinerary for our kids, making wildlife education fun and engaging. The staff went above and beyond to ensure our comfort and safety."</p>
+                    <div class="testimonial-author">
+                        <img src="assets/testimonial-3.jpg" alt="Rahul & Neha Mehta" class="author-image">
+                        <div class="author-info">
+                            <h4>Rahul & Neha Mehta</h4>
+                            <p>Delhi, India</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section-padding" id="contact">
+        <div class="section-header">
+            <span class="section-subtitle">Get In Touch</span>
+            <h2 class="section-title">Contact Us</h2>
+            <div class="section-divider"></div>
+            <p class="section-description">Have questions or ready to book your adventure? Our team is here to help plan your perfect wildlife experience.</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Our Office</h3>
+                        <p>Building No. I 53, Aditya Puram<br>Gwalior - 474005<br>Madhya Pradesh, India</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Call Us</h3>
+                        <p>+91-07947434830<br>Mon-Sat, 9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Email Us</h3>
+                        <p>info@theroarkingdom.com<br>bookings@theroarkingdom.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form id="inquiry-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <select id="interest" name="interest">
+                            <option value="">I'm interested in...</option>
+                            <option value="ranthambore">Ranthambore Tiger Safari</option>
+                            <option value="kaziranga">Kaziranga Wildlife Expedition</option>
+                            <option value="bandhavgarh">Bandhavgarh Jungle Retreat</option>
+                            <option value="custom">Custom Tour</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div class="modal" id="booking-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">&times;</button>
+            
+            <div class="modal-header">
+                <h2>Book Your Wildlife Adventure</h2>
+                <p>Fill in your details to reserve your spot on this unforgettable journey</p>
+            </div>
+
+            <div class="modal-body">
+                <form id="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="booking-name">Full Name</label>
+                            <input type="text" id="booking-name" name="booking-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-email">Email</label>
+                            <input type="email" id="booking-email" name="booking-email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="booking-phone">Phone Number</label>
+                            <input type="tel" id="booking-phone" name="booking-phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-date">Preferred Date</label>
+                            <input type="date" id="booking-date" name="booking-date" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="booking-pax">Number of People</label>
+                        <select id="booking-pax" name="booking-pax">
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5+">5+ People</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="booking-notes">Special Requests</label>
+                        <textarea id="booking-notes" name="booking-notes" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-container">I agree to the <a href="#">terms and conditions</a>
+                            <input type="checkbox" id="booking-terms" name="booking-terms" required>
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+
+                    <div class="form-actions">
+                        <!-- Razorpay Payment Button (Placeholder) -->
+                        <button type="button" class="btn btn-primary" id="razorpay-btn">Proceed to Payment</button>
+                        <p class="payment-note">Secure payment processed via Razorpay</p>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-</section>
 
+    <!-- Gallery Lightbox -->
+    <div class="lightbox" id="gallery-lightbox">
+        <button class="lightbox-close" id="lightbox-close">&times;</button>
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-nav lightbox-next" id="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+        
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightbox-image">
+            <div class="lightbox-caption">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+            </div>
+        </div>
+    </div>
 
-   <!-- Enhanced Guides Section -->
-<section id="guides" class="guides">
-    <h2>Meet Our Expert Guides</h2>
-    <p>Our experienced guides are passionate about wildlife and knowledgeable about the terrain. Each guide specializes in different aspects of the ecosystem, making every tour unique and informative. Get to know our team:</p>
-    <div class="guide-gallery">
-        <div class="guide-card">
-            <img src="pic 1.jpeg" alt="Guide 1">
-            <div class="guide-info">
-                <h3>John Doe</h3>
-                <p>Specialist in bird watching and animal tracking. With over 10 years of experience, John brings a wealth of knowledge to every tour.</p>
-                <div class="social-links">
-                    <a href="https://www.instagram.com/guide_johndoe" class="social-icon">Instagram</a>
-                    <a href="mailto:john@theroarkingdom.com" class="social-icon">Email</a>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="assets/logo-white.svg" alt="The Roar Kingdom">
+                        <span>The Roar Kingdom</span>
+                    </div>
+                    <p>Premium wildlife experiences that connect you with nature while supporting conservation efforts across India's most spectacular national parks.</p>
+                    <div class="footer-newsletter">
+                        <h3>Subscribe to Our Newsletter</h3>
+                        <form id="newsletter-form">
+                            <input type="email" placeholder="Your Email Address" required>
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="links-column">
+                        <h3>Explore</h3>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#tours">Tours</a></li>
+                            <li><a href="#stays">Stays</a></li>
+                            <li><a href="#guides">Guides</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="links-column">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Booking Policy</a></li>
+                            <li><a href="#">Cancellation Policy</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="links-column">
+                        <h3>Destinations</h3>
+                        <ul>
+                            <li><a href="#">Ranthambore</a></li>
+                            <li><a href="#">Kaziranga</a></li>
+                            <li><a href="#">Bandhavgarh</a></li>
+                            <li><a href="#">Kanha</a></li>
+                            <li><a href="#">Pench</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 The Roar Kingdom. All rights reserved.</p>
+                </div>
+
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                </div>
+
+                <div class="footer-payments">
+                    <span>We accept:</span>
+                    <img src="assets/razorpay-logo.png" alt="Razorpay">
+                    <img src="assets/visa.png" alt="Visa">
+                    <img src="assets/mastercard.png" alt="Mastercard">
+                    <img src="assets/paypal.png" alt="PayPal">
                 </div>
             </div>
         </div>
-        <div class="guide-card">
-            <img src="pic 2.jpeg" alt="Guide 2">
-            <div class="guide-info">
-                <h3>Jane Smith</h3>
-                <p>Expert in ecology and conservation efforts. Jane is dedicated to preserving the natural beauty of our national parks.</p>
-                <div class="social-links">
-                    <a href="https://www.instagram.com/guide_janesmith" class="social-icon">Instagram</a>
-                    <a href="mailto:jane@theroarkingdom.com" class="social-icon">Email</a>
-                </div>
-            </div>
-        </div>
-        <!-- Additional Guide Profiles -->
-    </div>
-</section>
+    </footer>
 
-<section id="gallery" class="gallery">
-    <h2>Gallery</h2>
-    <p>Explore moments captured from our expeditions. Each photo tells a story of the vibrant wildlife and scenic landscapes waiting to be discovered.</p>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
-    <div class="gallery-grid">
-        <div class="gallery-item" onclick="openModal('Tiger.jpg', 'A majestic tiger in its natural habitat.', 'Majestic Tiger')">
-            <img src="Tiger.jpg" alt="Gallery Image 1">
-            <p class="image-description">Majestic Tiger</p>
-        </div>
-        <div class="gallery-item" onclick="openModal('ranthambore Sunset.jpg', 'Sunset over the beautiful Ranthambore National Park.', 'Ranthambore Sunset')">
-            <img src="ranthambore Sunset.jpg" alt="Gallery Image 2">
-            <p class="image-description">Ranthambore Sunset</p>
-        </div>
-        <div class="gallery-item" onclick="openModal('kaziranga.jpg', 'Exploring the lush greenery of Kaziranga National Park.', 'Kaziranga Wilderness')">
-            <img src="kaziranga.jpg" alt="Gallery Image 3">
-            <p class="image-description">Kaziranga Wilderness</p>
-        </div>
-        <div class="gallery-item" onclick="openModal('elephant.jpg', 'A playful elephant enjoying a bath.', 'Playful Elephant')">
-            <img src="elephant.jpg" alt="Gallery Image 4">
-            <p class="image-description">Playful Elephant</p>
-        </div>
-    </div>
-
-    <!-- Modal for Large Image View -->
-    <div id="imageModal" class="modal" onclick="closeModal(event)">
-        <div class="modal-content-container">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <img class="modal-image" id="modalImage">
-            <div class="modal-description">
-                <h3 id="modalTitle"></h3>
-                <p id="modalDescription"></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Footer Section -->
-<footer>
-    <div class="footer-container">
-        <div class="footer-brand">
-            <h2>The Roar Kingdom</h2>
-            <p>&copy; 2024 The Roar Kingdom. All Rights Reserved.</p>
-        </div>
-
-        <div class="logo-container">
-            <a href="#home">
-                <img src="logo.jpg" alt="The Roar Kingdom Logo" class="logo-img">
-            </a>
-        </div>
-
-        <div class="footer-location">
-            <h3>Our Location</h3>
-            <p>Building No. I 53,</p>
-            <p>Aditya Puram, Gwalior - 474005</p>
-            <p>Madhya Pradesh, India</p>
-            <p>Email: <a href="mailto:info@theroarkingdom.com">info@theroarkingdom.com</a></p>
-            <p>Phone: <a href="tel:+91-07947434830">+91-07947434830</a></p>
-        </div>
-    </div>
-</footer>
-    <!-- External JavaScript File -->
+    <!-- Scripts -->
     <script src="scripts.js"></script>
+    <!-- Razorpay SDK would be added here when implementing payments -->
+    <!-- <script src="https://checkout.razorpay.com/v1/checkout.js"></script> -->
+
 </body>
 </html>
